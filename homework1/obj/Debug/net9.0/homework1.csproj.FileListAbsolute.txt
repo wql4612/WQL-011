@@ -1,0 +1,14 @@
+E:\homework\vscode\C#dotnet\homework1\bin\Debug\net9.0\homework1.exe
+E:\homework\vscode\C#dotnet\homework1\bin\Debug\net9.0\homework1.deps.json
+E:\homework\vscode\C#dotnet\homework1\bin\Debug\net9.0\homework1.runtimeconfig.json
+E:\homework\vscode\C#dotnet\homework1\bin\Debug\net9.0\homework1.dll
+E:\homework\vscode\C#dotnet\homework1\bin\Debug\net9.0\homework1.pdb
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\homework1.GeneratedMSBuildEditorConfig.editorconfig
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\homework1.AssemblyInfoInputs.cache
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\homework1.AssemblyInfo.cs
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\homework1.csproj.CoreCompileInputs.cache
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\homework1.dll
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\refint\homework1.dll
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\homework1.pdb
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\homework1.genruntimeconfig.cache
+E:\homework\vscode\C#dotnet\homework1\obj\Debug\net9.0\ref\homework1.dll
