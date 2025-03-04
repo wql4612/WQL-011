@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assignment2", "assignment2"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime_Factor", "assignment2\Prime_Factor\Prime_Factor.csproj", "{91608FF0-39AD-484B-8CD5-1BC89119CD6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayyay", "assignment2\Ayyay\Ayyay.csproj", "{512E6974-81B4-4E87-B1A1-8217A90B44E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "assignment2\Array\Array.csproj", "{512E6974-81B4-4E87-B1A1-8217A90B44E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime_Number", "assignment2\Prime_Number\Prime_Number.csproj", "{6FF95786-7D79-4FC5-B8EA-B005DC32ACE2}"
 EndProject

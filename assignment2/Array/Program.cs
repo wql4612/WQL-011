@@ -1,4 +1,4 @@
-﻿namespace Ayyay;
+﻿namespace Array;
 
 class Program
 {
