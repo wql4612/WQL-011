@@ -1,0 +1,14 @@
+E:\homework\vscode\c#\assignment2\Prime_Number\bin\Debug\net9.0\Prime_Number.exe
+E:\homework\vscode\c#\assignment2\Prime_Number\bin\Debug\net9.0\Prime_Number.deps.json
+E:\homework\vscode\c#\assignment2\Prime_Number\bin\Debug\net9.0\Prime_Number.runtimeconfig.json
+E:\homework\vscode\c#\assignment2\Prime_Number\bin\Debug\net9.0\Prime_Number.dll
+E:\homework\vscode\c#\assignment2\Prime_Number\bin\Debug\net9.0\Prime_Number.pdb
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\Prime_Number.GeneratedMSBuildEditorConfig.editorconfig
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\Prime_Number.AssemblyInfoInputs.cache
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\Prime_Number.AssemblyInfo.cs
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\Prime_Number.csproj.CoreCompileInputs.cache
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\Prime_Number.dll
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\refint\Prime_Number.dll
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\Prime_Number.pdb
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\Prime_Number.genruntimeconfig.cache
+E:\homework\vscode\c#\assignment2\Prime_Number\obj\Debug\net9.0\ref\Prime_Number.dll

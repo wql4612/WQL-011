@@ -1,0 +1,14 @@
+E:\homework\vscode\c#\assignment2\Prime_Factor\bin\Debug\net9.0\Prime_Factor.exe
+E:\homework\vscode\c#\assignment2\Prime_Factor\bin\Debug\net9.0\Prime_Factor.deps.json
+E:\homework\vscode\c#\assignment2\Prime_Factor\bin\Debug\net9.0\Prime_Factor.runtimeconfig.json
+E:\homework\vscode\c#\assignment2\Prime_Factor\bin\Debug\net9.0\Prime_Factor.dll
+E:\homework\vscode\c#\assignment2\Prime_Factor\bin\Debug\net9.0\Prime_Factor.pdb
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\Prime_Factor.GeneratedMSBuildEditorConfig.editorconfig
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\Prime_Factor.AssemblyInfoInputs.cache
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\Prime_Factor.AssemblyInfo.cs
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\Prime_Factor.csproj.CoreCompileInputs.cache
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\Prime_Factor.dll
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\refint\Prime_Factor.dll
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\Prime_Factor.pdb
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\Prime_Factor.genruntimeconfig.cache
+E:\homework\vscode\c#\assignment2\Prime_Factor\obj\Debug\net9.0\ref\Prime_Factor.dll
