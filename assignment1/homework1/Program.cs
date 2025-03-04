@@ -14,7 +14,8 @@ class Program
         {
             Console.WriteLine("错误：无效的数字输入！");
             return;
-        }z
+        }
+
 
         // 获取运算符
         Console.Write("请选择运算符 (+ - * /): ");
@@ -68,6 +69,5 @@ class Program
             case "/": return a / b;
             default: throw new InvalidOperationException("未知运算符");
         }
-
     }
 }
