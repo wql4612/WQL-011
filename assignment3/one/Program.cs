@@ -100,7 +100,6 @@ public class Triangle : ShapeBase
     }
 }
 
-// 示例用法
 class Program
 {
     static void Main()
