@@ -1,3 +1,3 @@
 homework
-作业5及以后的重新用visual studio完成并命名为vsassignmnet+编号提交
+作业5及以后的重新用visual studio完成并命名为vsassignment+编号提交
 之前的assignment5和assignmnet_5（使用vscode）作废
