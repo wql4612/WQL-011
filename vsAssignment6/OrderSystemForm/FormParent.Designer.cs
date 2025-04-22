@@ -72,6 +72,7 @@
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(15, 15, 0, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(970, 42);
             this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // orderMainLink
             // 
@@ -85,6 +86,7 @@
             this.orderMainLink.TabIndex = 0;
             this.orderMainLink.TabStop = true;
             this.orderMainLink.Text = "订单管理";
+            this.orderMainLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.orderMainLink_LinkClicked);
             // 
             // seperatorLabel
             // 
@@ -110,6 +112,7 @@
             this.orderEditLink.TabIndex = 3;
             this.orderEditLink.Text = "添加订单";
             this.orderEditLink.Visible = false;
+            this.orderEditLink.Click += new System.EventHandler(this.orderEditLink_Click);
             // 
             // FormParent
             // 

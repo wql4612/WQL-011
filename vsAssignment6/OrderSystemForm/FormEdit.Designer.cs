@@ -119,7 +119,7 @@
             this.dgvItems.RowTemplate.Height = 23;
             this.dgvItems.Size = new System.Drawing.Size(1322, 451);
             this.dgvItems.TabIndex = 0;
-            this.dgvItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItems_CellContentClick_1);
+            this.dgvItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItems_CellContentClick);
             // 
             // UnitPrice
             // 
@@ -135,6 +135,10 @@
             this.bdsDetails.DataMember = "Details";
             this.bdsDetails.DataSource = this.bdsOrders;
             // 
+            // bdsOrders
+            // 
+            this.bdsOrders.DataSource = typeof(OrderManagementSystem.Order);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvItems);
@@ -147,6 +151,7 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "订单明细";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnDeleteItem
             // 
@@ -160,6 +165,7 @@
             this.btnDeleteItem.TabIndex = 7;
             this.btnDeleteItem.Text = "删除明细";
             this.btnDeleteItem.UseVisualStyleBackColor = true;
+            this.btnDeleteItem.Click += new System.EventHandler(this.btnDeleteDetail_Click);
             // 
             // btnEditItem
             // 
@@ -173,6 +179,7 @@
             this.btnEditItem.TabIndex = 6;
             this.btnEditItem.Text = "修改明细";
             this.btnEditItem.UseVisualStyleBackColor = true;
+            this.btnEditItem.Click += new System.EventHandler(this.btnEditDetail_Click);
             // 
             // btnAddItem
             // 
@@ -186,6 +193,7 @@
             this.btnAddItem.TabIndex = 5;
             this.btnAddItem.Text = "添加明细";
             this.btnAddItem.UseVisualStyleBackColor = true;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddDetail_Click);
             // 
             // btnSave
             // 
@@ -201,6 +209,7 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "保存订单";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // panel1
             // 
@@ -226,6 +235,7 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "订单号";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -238,6 +248,7 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "客户";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtOrderId
             // 
@@ -248,6 +259,7 @@
             this.txtOrderId.Name = "txtOrderId";
             this.txtOrderId.Size = new System.Drawing.Size(510, 28);
             this.txtOrderId.TabIndex = 9;
+            this.txtOrderId.TextChanged += new System.EventHandler(this.txtOrderId_TextChanged);
             // 
             // label3
             // 
@@ -258,6 +270,7 @@
             this.label3.Size = new System.Drawing.Size(80, 18);
             this.label3.TabIndex = 11;
             this.label3.Text = "下单时间";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblCreateTime
             // 
@@ -269,6 +282,11 @@
             this.lblCreateTime.Size = new System.Drawing.Size(89, 18);
             this.lblCreateTime.TabIndex = 12;
             this.lblCreateTime.Text = "2020-4-10";
+            this.lblCreateTime.Click += new System.EventHandler(this.lblCreateTime_Click);
+            // 
+            // bdsCustomers
+            // 
+            this.bdsCustomers.DataSource = typeof(OrderManagementSystem.Customer);
             // 
             // cbxCustomer
             // 
@@ -283,6 +301,7 @@
             this.cbxCustomer.Name = "cbxCustomer";
             this.cbxCustomer.Size = new System.Drawing.Size(510, 26);
             this.cbxCustomer.TabIndex = 10;
+            this.cbxCustomer.SelectedIndexChanged += new System.EventHandler(this.cbxCustomer_SelectedIndexChanged);
             // 
             // tableLayoutPanel1
             // 

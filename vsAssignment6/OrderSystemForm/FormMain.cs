@@ -47,7 +47,34 @@ namespace OrderSystemForm
 
         private void btnQuery_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                switch (cbxField.SelectedIndex)
+                {
+                    case 0://所有订单
+                        bdsOrders.DataSource = orderService.GetAllOrders();
+                        break;
+                    case 1://根据ID查询
+                        int id = Convert.ToInt32(Keyword);
+                        bdsOrders.DataSource = orderService.GetOrder(id);
+                        break;
+                    case 2://根据客户查询
+                        bdsOrders.DataSource = orderService.QueryOrdersByCustomerName(Keyword);
+                        break;
+                    case 3://根据货物查询
+                        bdsOrders.DataSource = orderService.QueryOrdersByProductName(Keyword);
+                        break;
+                    case 4://根据总价格查询（大于某个总价）
+                        float totalPrice = Convert.ToInt32(Keyword);
+                        bdsOrders.DataSource = orderService.QueryByTotalAmount(totalPrice);
+                        break;
+                }
+                bdsOrders.ResetBindings(false);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
@@ -81,18 +108,38 @@ namespace OrderSystemForm
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            Order order = bdsOrders.Current as Order;
+            if (order == null)
+            {
+                MessageBox.Show("请选择一个订单进行删除");
+                return;
+            }
+            DialogResult result = MessageBox.Show($"确认要删除Id为{order.OrderId}的订单吗？", "删除", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                orderService.RemoveOrder(order.OrderId);
+                QueryAll();
+            }
         }
 
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                String fileName = saveFileDialog1.FileName;
+                orderService.Export(fileName);
+            }
         }
 
         private void btnImport_Click(object sender, EventArgs e)
         {
-
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                String fileName = openFileDialog1.FileName;
+                orderService.Import(fileName);
+                QueryAll();
+            }
         }
 
         private void dbvOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -100,12 +147,32 @@ namespace OrderSystemForm
 
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void panelQuery_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbxField_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtKeyword_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
         {
 
         }
@@ -120,7 +187,7 @@ namespace OrderSystemForm
 
         }
 
-        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        private void bdsDetails_CurrentChanged(object sender, EventArgs e)
         {
 
         }
@@ -130,22 +197,7 @@ namespace OrderSystemForm
 
         }
 
-        private void bdsDetails_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dbvOrders_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panelButtons_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
         }
@@ -155,7 +207,7 @@ namespace OrderSystemForm
 
         }
 
-        private void panelQuery_Paint(object sender, PaintEventArgs e)
+        private void panelButtons_Paint(object sender, PaintEventArgs e)
         {
 
         }

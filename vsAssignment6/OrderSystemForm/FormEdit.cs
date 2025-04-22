@@ -190,11 +190,6 @@ namespace OrderSystemForm
 
         }
 
-        private void dgvItems_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void FormEdit_Load(object sender, EventArgs e)
         {
 

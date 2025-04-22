@@ -51,6 +51,10 @@
             this.txtQuantity.Size = new System.Drawing.Size(552, 28);
             this.txtQuantity.TabIndex = 10;
             // 
+            // bdsDetail
+            // 
+            this.bdsDetail.DataSource = typeof(OrderManagementSystem.OrderDetail);
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -92,6 +96,11 @@
             this.cbxGoods.Name = "cbxGoods";
             this.cbxGoods.Size = new System.Drawing.Size(552, 26);
             this.cbxGoods.TabIndex = 2;
+            this.cbxGoods.SelectedIndexChanged += new System.EventHandler(this.cbxGoods_SelectedIndexChanged);
+            // 
+            // bdsGoods
+            // 
+            this.bdsGoods.DataSource = typeof(OrderManagementSystem.Product);
             // 
             // label2
             // 
@@ -115,6 +124,7 @@
             this.btnOK.TabIndex = 13;
             this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // FormDetailEdit
             // 

@@ -97,7 +97,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\OrderManagementSystem.Customer.datasource" />
     <None Include="Properties\DataSources\OrderManagementSystem.Order.datasource" />
+    <None Include="Properties\DataSources\OrderManagementSystem.OrderDetail.datasource" />
+    <None Include="Properties\DataSources\OrderManagementSystem.OrderService.datasource" />
+    <None Include="Properties\DataSources\OrderManagementSystem.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
