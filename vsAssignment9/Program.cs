@@ -5,10 +5,11 @@ using assignment8.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // 添加服务到容器
+ 
+builder.Services.AddAuthorization();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<assignment8.Data.assignment8Context>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 var app = builder.Build();
 
 // 调用 SeedData 初始化数据库

@@ -1,8 +1,17 @@
 {
   "dependencies": {
-    "mssql1": {
+    "secrets1": {
+      "type": "secrets"
+    },
+    "mssql2": {
       "type": "mssql",
-      "connectionId": "ConnectionStrings:assignment8Context"
+      "connectionId": "ConnectionStrings:DefaultConnection1",
+      "dynamicId": null
+    },
+    "mssql3": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:DefaultConnection2",
+      "dynamicId": null
     }
   }
 }
